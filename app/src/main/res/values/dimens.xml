@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_small">15dp</dimen>
+    <dimen name="margin_standard">20dp</dimen>
+    <dimen name="margin_medium">10dp</dimen>
+    <dimen name="margin_large">225dp</dimen>
+    <dimen name="margin_extra_large">60dp</dimen>
+    <dimen name="margin_bottom_button">20dp</dimen>
+
+    <dimen name="icon_size_close">39dp</dimen>
+    <dimen name="icon_size_password">40dp</dimen>
+    <dimen name="pfp_size">120dp</dimen>
+    <dimen name="input_height">60dp</dimen>
+    <dimen name="switch_width">102dp</dimen>
+    <dimen name="switch_height">57dp</dimen>
+    <dimen name="scrollbar_size">12dp</dimen>
+
+    <dimen name="text_size_title">20sp</dimen>
+    <dimen name="text_size_error">18sp</dimen>
+    <dimen name="text_size_button">20sp</dimen>
+    <dimen name="text_size_remember">16sp</dimen>
+
+    <dimen name="padding_input">20dp</dimen>
+</resources>

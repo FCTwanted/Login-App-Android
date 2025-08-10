@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">P1_Alten_FelixCorralTejero</string>
+    <string name="enter">Entrar</string>
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="rememberme">Recordar</string>
+    <string name="access">Acceso</string>
+    <string name="loading">Cargando...</string>
+    <string name="error">Error</string>
+    <string name="accept">Aceptar</string>
+    <string name="close_app">Cerrar aplicación</string>
+    <string name="confirm_close">¿Estás seguro que quieres cerrar la aplicación?</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="err_invalid_credentials">Email o contraseña incorrectos</string>
+    <string name="welcome_user">¡Bienvenido %s!</string>
+    <string name="err_password_format">La contraseña debe tener entre 6-8 caracteres, al menos una mayúscula, una minúscula y un número</string>
+    <string name="no_error"> </string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="confirm_logout">¿Estás seguro de cerrar la sesión?</string>
+    <string name="name_format">Nombre: %s</string>
+    <string name="email_format">Email: %s</string>
+    <string name="age_format">Edad: %d años</string>
+    <string name="height_format">Altura: %.2f m</string>
+</resources>

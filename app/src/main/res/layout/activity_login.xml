@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundTint="@color/white"
+    android:background="@color/white"
+    tools:context=".LogInActivity">
+
+    <ImageView
+        android:id="@+id/loginImgCloseApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+        app:tint="@color/black"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/loginLabelTopTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="@string/access"
+        android:textSize="@dimen/text_size_title"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/loginInputEmail"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/input_height"
+        android:layout_marginStart="@dimen/margin_standard"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_standard"
+        android:paddingStart="@dimen/padding_input"
+        android:paddingEnd="@dimen/padding_input"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="@string/email"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginLabelTopTitle"
+        tools:ignore="Autofill,TextContrastCheck,TextFields,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/loginInputPassword"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/input_height"
+        android:layout_marginStart="@dimen/margin_standard"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_standard"
+        android:paddingStart="@dimen/padding_input"
+        android:paddingEnd="@dimen/padding_input"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="@string/password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginInputEmail"
+        tools:ignore="Autofill,TextContrastCheck,VisualLintTextFieldSize" />
+
+    <ImageView
+        android:id="@+id/loginImgShowPassword"
+        android:layout_width="@dimen/icon_size_close"
+        android:layout_height="@dimen/icon_size_password"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        app:layout_constraintEnd_toEndOf="@+id/loginInputPassword"
+        app:layout_constraintTop_toTopOf="@+id/loginInputPassword"
+        app:srcCompat="@drawable/showpass"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:id="@+id/loginInputRememberMe"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/input_height"
+        android:layout_marginStart="@dimen/margin_standard"
+        android:layout_marginTop="@dimen/margin_extra_large"
+        android:layout_marginEnd="@dimen/margin_standard"
+        android:paddingStart="@dimen/padding_input"
+        android:paddingEnd="@dimen/padding_input"
+        android:textSize="@dimen/text_size_remember"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/rememberme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginLabelWrongCredentials"
+        tools:ignore="Autofill,Deprecated,VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/loginLabelWrongCredentials"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/input_height"
+        android:layout_marginStart="@dimen/margin_standard"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_standard"
+        android:textSize="@dimen/text_size_error"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginInputPassword" />
+
+    <Switch
+        android:id="@+id/loginSwitchRememberMe"
+        android:layout_width="@dimen/switch_width"
+        android:layout_height="@dimen/switch_height"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:scrollbarSize="@dimen/scrollbar_size"
+        android:checked="true"
+        android:showText="false"
+        android:textSize="14sp"
+        android:thumbTint="@color/orange"
+        android:trackTint="@color/orange"
+        app:layout_constraintBottom_toBottomOf="@+id/loginInputRememberMe"
+        app:layout_constraintEnd_toEndOf="@+id/loginInputRememberMe"
+        app:layout_constraintTop_toTopOf="@+id/loginInputRememberMe"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Button
+        android:id="@+id/loginBtnEnter"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/input_height"
+        android:layout_marginStart="@dimen/margin_standard"
+        android:layout_marginEnd="@dimen/margin_standard"
+        android:layout_marginBottom="@dimen/margin_bottom_button"
+        android:textSize="@dimen/text_size_button"
+        android:backgroundTint="@color/gray"
+        android:enabled="false"
+        android:text="@string/enter"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="VisualLintButtonSize" />
+
+    <TextView
+        android:id="@+id/loginLabelWrongCredentials2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/input_height"
+        android:layout_marginStart="@dimen/margin_standard"
+        android:layout_marginEnd="@dimen/margin_standard"
+        android:layout_marginBottom="@dimen/margin_bottom_button"
+        android:textSize="@dimen/text_size_button"
+        android:gravity="center_vertical"
+        android:text="@string/loading"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="RtlCompat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
