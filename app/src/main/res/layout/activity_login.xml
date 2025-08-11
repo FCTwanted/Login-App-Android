@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:foregroundTint="@color/white"
     android:background="@color/white"
-    tools:context=".LogInActivity">
+    tools:context="com.dam.login_app.LogInActivity">
 
     <ImageView
         android:id="@+id/loginImgCloseApp"

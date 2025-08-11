@@ -1,4 +1,4 @@
-package com.dam.p1_alten_felixcorraltejero
+package com.dam.login_app
 
 import android.content.Intent
 import android.os.Bundle
@@ -12,7 +12,8 @@ import android.view.View
 import android.view.inputmethod.EditorInfo
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.dam.p1_alten_felixcorraltejero.databinding.ActivityLoginBinding
+import com.dam.login_app.R
+import com.dam.login_app.databinding.ActivityLoginBinding
 
 class LogInActivity : AppCompatActivity() {
 

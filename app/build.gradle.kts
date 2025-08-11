@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.dam.p1_alten_felixcorraltejero"
+    namespace = "com.dam.login_app"
     compileSdk = 35
 
     buildFeatures {
@@ -14,7 +14,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.dam.p1_alten_felixcorraltejero"
+        applicationId = "com.dam.login_app"
         minSdk = 26
         targetSdk = 35
         versionCode = 1

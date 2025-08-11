@@ -1,4 +1,4 @@
-package com.dam.p1_alten_felixcorraltejero
+package com.dam.login_app
 
 object Validator {
 

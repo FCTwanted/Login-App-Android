@@ -1,10 +1,11 @@
-package com.dam.p1_alten_felixcorraltejero
+package com.dam.login_app
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
-import com.dam.p1_alten_felixcorraltejero.databinding.ActivityWelcomeBinding
+import com.dam.login_app.R
+import com.dam.login_app.databinding.ActivityWelcomeBinding
 
 class WelcomeActivity : AppCompatActivity() {
 

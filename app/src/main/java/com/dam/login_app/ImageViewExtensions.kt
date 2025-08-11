@@ -1,7 +1,8 @@
-package com.dam.p1_alten_felixcorraltejero
+package com.dam.login_app
 
 import android.widget.ImageView
 import com.bumptech.glide.Glide
+import com.dam.login_app.R
 
 fun ImageView.loadImage(
     url: String?,

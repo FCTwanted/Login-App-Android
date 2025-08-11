@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "P1_Alten_FelixCorralTejero"
+rootProject.name = "login_app"
 include(":app")
  

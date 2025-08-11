@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">P1_Alten_FelixCorralTejero</string>
+    <string name="app_name">LoginApp</string>
     <string name="enter">Entrar</string>
     <string name="email">Email</string>
     <string name="password">Contraseña</string>
